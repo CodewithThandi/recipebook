@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #2bb11f;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .recipe-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            width: 320px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .recipe-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        }
+        .recipe-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .recipe-content {
+            padding: 1.2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .recipe-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ff6f61;
+            margin-bottom: 0.5rem;
+        }
+        .recipe-desc {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .steps-title {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #43c6ac;
+        }
+        .recipe-steps {
+            margin: 0;
+            padding-left: 1.2rem;
+            font-size: 0.98rem;
+            color: #444;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Colorful Recipe Book
+    </header>
+    <div class="container">
+        <!-- Biryani -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="biryani.jpg" alt="Biryani">
+            <div class="recipe-content">
+                <div class="recipe-title"> Chicken Biryani</div>
+                <div class="recipe-desc">A fragrant and flavorful rice dish layered with spiced meat or vegetables, popular across South Asia.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Marinate chicken with yogurt, spices, and herbs for 1 hour.</li>
+                    <li>Fry onions until golden brown; set aside half for garnish.</li>
+                    <li>Cook marinated chicken with tomatoes and fried onions.</li>
+                    <li>Parboil basmati rice with whole spices.</li>
+                    <li>Layer chicken and rice in a pot, sprinkle saffron milk and fried onions.</li>
+                    <li>Cover and cook on low heat (dum) for 20-25 minutes.</li>
+                    <li>Garnish with coriander, mint, and serve hot.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Chocolate Cake -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="chocolatecake.jpg" alt="Chocolate Cake">
+            <div class="recipe-content">
+                <div class="recipe-title">Chocolate Cake</div>
+                <div class="recipe-desc">A rich, moist chocolate cake perfect for celebrations and sweet cravings.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Preheat oven to 180°C (350°F). Grease and flour a cake pan.</li>
+                    <li>Mix flour, cocoa powder, baking powder, and salt.</li>
+                    <li>In another bowl, beat sugar, eggs, and melted butter.</li>
+                    <li>Add dry ingredients alternately with milk, mixing well.</li>
+                    <li>Pour batter into pan and bake for 30-35 minutes.</li>
+                    <li>Let cool, then frost with chocolate icing.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Garden Salad -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="gardensalad.png" alt="Garden Salad">
+            <div class="recipe-content">
+                <div class="recipe-title">Garden Salad</div>
+                <div class="recipe-desc">A fresh and crunchy salad with mixed greens, veggies, and a zesty dressing.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Wash and chop lettuce, cucumber, tomatoes, and carrots.</li>
+                    <li>Add sliced red onions and bell peppers.</li>
+                    <li>Toss vegetables in a large bowl.</li>
+                    <li>Drizzle with olive oil, lemon juice, salt, and pepper.</li>
+                    <li>Mix well and serve chilled.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Fluffy Pancakes -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="pancake.jpg" alt="Fluffy Pancakes">
+            <div class="recipe-content">
+                <div class="recipe-title">Fluffy Pancakes</div>
+                <div class="recipe-desc">Light and airy pancakes, perfect for a delightful breakfast treat.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Mix flour, sugar, baking powder, and salt in a bowl.</li>
+                    <li>Whisk milk, eggs, and melted butter in another bowl.</li>
+                    <li>Combine wet and dry ingredients; mix until just combined.</li>
+                    <li>Heat a non-stick pan and pour batter to form pancakes.</li>
+                    <li>Cook until bubbles form, flip, and cook until golden.</li>
+                    <li>Serve with syrup, fruits, or your favorite toppings.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Classic Pasta -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="pasta.jpg" alt="Classic Pasta">
+            <div class="recipe-content">
+                <div class="recipe-title">Classic Pasta</div>
+                <div class="recipe-desc">A timeless Italian pasta dish tossed in a savory tomato sauce.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Boil pasta in salted water until al dente; drain.</li>
+                    <li>Sauté garlic and onions in olive oil.</li>
+                    <li>Add tomato sauce, salt, pepper, and herbs; simmer.</li>
+                    <li>Toss cooked pasta in the sauce.</li>
+                    <li>Garnish with parmesan and basil. Serve hot.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Pilau -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="pilau.jpg" alt="Pilau">
+            <div class="recipe-content">
+                <div class="recipe-title">Pilau</div>
+                <div class="recipe-desc">A spiced rice dish with meat or vegetables, popular in East African cuisine.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Sauté onions, garlic, and ginger in oil until golden.</li>
+                    <li>Add pilau spices (cumin, cardamom, cinnamon, cloves).</li>
+                    <li>Add meat and cook until browned.</li>
+                    <li>Stir in tomatoes and cook until soft.</li>
+                    <li>Add washed rice and mix well.</li>
+                    <li>Pour in water or broth, season with salt.</li>
+                    <li>Cover and cook on low heat until rice is done.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Sponge Cake -->
+        <div class="recipe-card">
+            <img class="recipe-img" src="spongecake.jpg" alt="Sponge Cake">
+            <div class="recipe-content">
+                <div class="recipe-title">Sponge Cake</div>
+                <div class="recipe-desc">A light and airy cake, perfect for tea time or as a dessert base.</div>
+                <div class="steps-title">Steps:</div>
+                <ol class="recipe-steps">
+                    <li>Preheat oven to 180°C (350°F). Grease a cake tin.</li>
+                    <li>Beat eggs and sugar until pale and fluffy.</li>
+                    <li>Gently fold in sifted flour and baking powder.</li>
+                    <li>Add melted butter and vanilla extract.</li>
+                    <li>Pour into tin and bake for 25-30 minutes.</li>
+                    <li>Cool before slicing and serving.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; 2025 Tasty Recipes. All rights reserved.</footer>
+</body>
+</html>
